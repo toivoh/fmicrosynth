@@ -36,6 +36,7 @@ The following constant values are used below:
 
 	code[pc] = INST_NOP;
 
+Does nothing.
 Used to fill out any unused instruction slots. It's enough to set the high byte of the instruction to 0 to make it a `nop`.
 
 ### disable
@@ -138,8 +139,8 @@ Triangle wave:
 
 Second order sine approximation:
 
-	sina2(t) = 1 - (2*t-1)^2,	t = 0..1
-	sina2(t) = -sina2(-t)
+	sina2(t) = 1 - (2*t-1)^2,    t =  0 .. 1
+	sina2(t) = -sina2(-t),       t = -1 .. 0
 
 and then it repeats. Weaker harmonics than `triangle`, but still noticeable.
 

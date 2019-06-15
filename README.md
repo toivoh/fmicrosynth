@@ -22,7 +22,13 @@ The program can be put together from _patches_, small code snippets that each ma
 There is limited support for envelopes: Instead of changing eg a volume parameter directly from the outside, a patch can take a target value and a speed to approach it.
 Beyond that, envelope handling is expected to be done by software.
 
-Usage is described below. See also [instruction set](instructions.md), [embedding](embedding.md), and [space saving considerations](space-saving.md) (which includes a discussion of phase dithering for improved frequency resolution).
+Usage is described below.
+See also
+* [instruction set](instructions.md),
+* [embedding](embedding.md), and
+* [space saving considerations](space-saving.md), including
+	* the sine approximation, and
+	* phase dithering for improved frequency resolution.
 
 A short demonstration of the synth can be heard at https://youtu.be/o0-lQ3pMrYY
 

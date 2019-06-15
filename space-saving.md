@@ -16,7 +16,9 @@ The function `sin(pi/2*t)` is approximated over the interval `[0,2]` (one half-c
 
 For `[-2,0]` (the other half-cycle), `sin(pi/2*t)` is approximated by `-f(-t)`. Then the approximation repeats with a period of 4, just like `sin(pi/2*t)`.
 
-This is not a pure sine wave, but it's quite close. Except for the fundamental there's odd harmonics: the 3rd at -48 dB from the fundamental, the 5th at -70 dB, the 7th at -84 dB, the 9th at -95 dB, and then we're below the 90 dB or so signal-to-noise ratio that we can get with a 16 bit representation.
+This is not a pure sine wave, but it's quite close. Except for the fundamental there's odd harmonics:
+the 3rd at -48 dB from the fundamental, the 5th at -70 dB, the 7th at -84 dB, the 9th at -95 dB, the 11th at -104 dB,
+and then we're beyond the signal-to-noise ratio that we can get with a 16 bit representation.
 
 On top of the approximation error, there's a little roundoff error when the `sin` instruction evaluates the polynomial, with a signal-to-noise ratio of above 96 dB to the true polynomial.
 
